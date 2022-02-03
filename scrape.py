@@ -28,8 +28,6 @@ driver.switch_to.window(driver.window_handles[1])
 WebDriverWait(driver, 10).until(EC.element_to_be_clickable((By.XPATH, '//a[contains(@href, "195880")]/./..'))).click()
 WebDriverWait(driver,10).until(EC.element_to_be_clickable((By.XPATH,'/html/body/div[2]/div[2]/div[2]/div[2]/div/nav/ul/li[3]/a'))).click()
 
-raise SystemExit
-
 # get quiz names
 quiz_names = []
 for element in driver.find_elements_by_xpath('//a[contains(@title, "Quiz")]'):
